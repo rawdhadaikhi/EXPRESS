@@ -1,0 +1,10 @@
+h1{
+    text-align: center;
+}
+.bloc{
+    padding-top: 20px;
+    margin-top:100px;
+    text-align: center;
+    border :1px;
+    border-radius:5px;
+}
