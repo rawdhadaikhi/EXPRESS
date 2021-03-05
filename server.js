@@ -14,6 +14,9 @@ const router = express.Router();
 // // require middleware 
 var verify = require('./middleware');
 
+app.get('/error', function(req,res){
+    res.sendFile(path.join(__dirname,'views/Error.html'));
+  })
 //  // invoke method middleware
 app.use(verify);
 

@@ -10,8 +10,8 @@ const verify =( req ,res ,next) => {
             dataR=data.toString()
         })
 
-     if(time <= 9 || time >=21|| day ==0 || day ==6){
-         res.send('<h1>Oups !!! Sorry... we are only available from monday to friday, 9.a.m to 7.p.m</h1>')
+     if(time < 9 || time >=17|| day ==0 || day ==6){
+         res.redirect('/error')
      }else {
          next();
      }
